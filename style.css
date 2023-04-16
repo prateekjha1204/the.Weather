@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-image: url("img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.922);
+}
+
+
+
+/*-----------------
+ Header
+-------------------*/
+
+.header{
+    width: 100%;
+    height: 15vh;
+}
+
+.name{
+    height: 10vh;
+    padding-top:20px;
+    margin: 10px 5vh;
+    display: flex;
+}
+
+.name p{
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+
+/*-----------------
+ Main-Body
+-------------------*/
+
+#card--container{
+    margin-top: 2vh;
+    height: 70vh;
+    width: 70vw;
+    color: whitesmoke;
+    box-shadow: 0px 0px 10px 2px rgba(245, 111, 2, 0.846);
+    border-radius: 0px;
+}
+#res1{
+    height: 70vh;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/*---Temp and City---*/
+
+.city{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 30px;
+    padding-top: 39%;
+}
+#temp{
+    height: 7vh;
+    font-size: 150px;
+}
+#city{
+    width: 100%;
+    font-size: 50px;
+    padding: 60px 0 0 10px;
+}
+#date{
+    font-size: 24px;
+    padding: 0 0 0 13px;
+}
+
+/*---SearchBar---*/
+
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    height: 4.5vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(238, 234, 229, 0.084);
+}
+#input{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    border-radius: 0rem;
+    border: 0px;
+    color:rgb(255, 128, 0);
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 10px;
+    font-size: 24px; 
+}
+#input:focus{
+    outline: none; 
+}
+#submit{
+    width: 45px;
+    height: 100%;
+    border-radius: 0;
+    background-color: rgba(255, 123, 0, 0.675); 
+}
+#submit:hover{
+    cursor: pointer;
+    transition: all 0.1s linear;
+    background-color: rgb(255, 128, 0);
+}
+
+/*--- Weather Details---*/
+
+.weather{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+
+.contains {
+    padding: 6vh 2vw;
+    font-size: 20px;
+}
+
+.x {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#txt{
+    font-size: 30px;   
+}
+#sky{
+    height: 10vh;
+    padding-top: 10vh;
+}
+#humidity{
+    height: 10vh;
+}
+#wind{
+    height: 10vh;
+}
+
+
+
+/*-----------------
+ Footer
+-------------------*/
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: end;
+    color: rgba(239, 80, 6, 0.814);
+    margin-top: 8vh;
+    opacity: 0.5;
+    width: 100%;
+    padding: 0 4vw 0 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgba(239, 80, 6, 0.814);
+}

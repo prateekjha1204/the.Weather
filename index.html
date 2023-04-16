@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the.Weather</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="name">
+            <p>the.Weather</p> 
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div id="card--container">
+        <div id="res1">
+            <div class="result">
+                <div class="city">
+                    <p id="temp">_°C</p>
+                    <div>
+                        <p id="city">City</p> 
+                        <p id="date">--</p>
+                    </div>                                 
+                </div>
+                <div class="weather">
+                    <div class="searchbar">
+                        <input id="input" type="text" placeholder="Cityname" />
+                        <img src="img/search-icon.svg" alt="Search Icon" id="submit">
+                    </div>
+                    <div class="contains">
+                        <p id="txt">Weather Details</p>
+                        <p id="sky">Sky</p>
+                        <div class="x"><p>humidity</p><p id="humidity">__%</p> </div>
+                        <div class="x"><p>Wind</p><p id="wind">__km/h</p></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <p>Created with 🧡 by <a href="#">Ryu</a>.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
