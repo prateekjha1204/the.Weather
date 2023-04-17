@@ -16,6 +16,9 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname.value}&units
     })
 .then((data) => {
     console.log(data);
+    if (data["message"]==="city not found"){
+        alert("Wrong spelling -_-"); 
+    }
     city.innerHTML = data.name;
     temp.innerHTML = `${Math.round(data.main.temp)}°C`;
     sky.innerHTML = data.weather[0].main;
